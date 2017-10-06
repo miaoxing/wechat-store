@@ -1,4 +1,4 @@
-# 演示
+# 微信门店小程序同步
 
 [![Build Status](https://img.shields.io/travis/miaoxing/wechatStore/master.svg?style=flat-square)](https://travis-ci.org/miaoxing/wechatStore)
 [![Coverage Status](https://img.shields.io/coveralls/miaoxing/wechatStore.svg?style=flat-square)](https://coveralls.io/r/miaoxing/wechatStore?branch=master)
