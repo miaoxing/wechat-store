@@ -14,6 +14,29 @@ class WechatStores extends BaseController
 
     protected $displayPageHeader = true;
 
+    public function indexAction($req)
+    {
+        $shops = wei()->shop();
+
+        // 分页
+        $shops->limit($req['rows'])->page($req['page']);
+
+        // 排序
+        $shops->desc('id');
+
+        $shops->andWhere('wechat_poi_id != 0');
+
+        $shops->findAll();
+        $data = $shops->toArray();
+
+        return $this->suc([
+            'data' => $data,
+            'page' => $req['page'],
+            'rows' => $req['rows'],
+            'records' => $shops->count(),
+        ]);
+    }
+
     public function syncAction()
     {
         $counts = [
