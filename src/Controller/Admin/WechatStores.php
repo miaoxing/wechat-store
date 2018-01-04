@@ -2,7 +2,7 @@
 
 namespace Miaoxing\WechatStore\Controller\Admin;
 
-use miaoxing\plugin\BaseController;
+use Miaoxing\Plugin\BaseController;
 
 class WechatStores extends BaseController
 {
