@@ -1,6 +1,6 @@
 <?= $block->js() ?>
 <script class="js-wechat-store-button-tpl" type="text/html">
-  <button class="js-wechat-store-sync btn btn-default" type="button">同步微信门店</button>
+  <button class="js-wechat-store-sync btn btn-secondary" type="button">同步微信门店</button>
 </script>
 
 <script>
